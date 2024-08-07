@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:yolo_realtime_plugin/yolo_realtime_plugin.dart';
 import 'package:flutter/material.dart';
+import 'package:yolo_realtime_plugin_example/screens/object_classfication_screen.dart';
 import 'dart:async';
 
 void main() {
@@ -36,7 +36,18 @@ class _MyAppState extends State<MyApp> {
                   ),
                 );
               },
-              child: Text('START YOLO'),
+              child: Text('객체 탐지'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ObjectClassficationScreen(),
+                  ),
+                );
+              },
+              child: Text('객체 분류'),
             )
           ],
         ),

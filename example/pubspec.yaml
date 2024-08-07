@@ -16,6 +16,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  # 이미지 피커 이용하기
+  image_picker: ^0.8.5+3
+  
 
   yolo_realtime_plugin:
     # When depending on this package from a real application you should use:
